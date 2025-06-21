@@ -1,0 +1,5 @@
+dadss_server
+.idea
+*.pyc
+media
+.venv
