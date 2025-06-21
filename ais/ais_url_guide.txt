@@ -1,0 +1,12 @@
+AIS Views
+/stay_count?date_from=2023-08-01&&date_to=2023-09-07&&port=			    GET (Returns number of days ships stay at all ports)
+/stay_count?date_from=2023-08-01&&date_to=2023-09-07&&port=KARACHI		GET (Returns number of days ships stay at KARACHI port)
+/ship_counts?date_from=2023-08-01&&date_to=2023-09-07				    GET (Returns total numer of ships crossing and at ports: ARACHI, PORT QASIM, GWADAR)
+/ship_counts_week?date_from=2023-08-01&&date_to=2023-09-07			    GET (Returns total numer of ships week-wise crossing and at ports: ARACHI, PORT QASIM, GWADAR)
+/vessel_position								                        GET (Returns last location of each unique ship using ship_id as unique field)
+/vessel_position?ship_id=106081							                GET (Returns all recorded locations of the provided ship_id)
+/flag_counts?date_from=2023-08-01&&date_to=2023-09-07				    GET (Returns number of ships flag-wise)
+/flag_counts?date_from=2023-08-01&&date_to=2023-09-07&&port=KARACHI		GET (Returns number of ships flag-wise standing at specified port)
+/type_counts?date_from=2023-08-01&&date_to=2023-09-07				    GET (Returns number of ships ais_type_summary-wise)
+/type_counts?date_from=2023-08-01&&date_to=2023-09-07&&port=KARACHI		GET (Returns number of ships ais_type_summary-wise standing at specified port)
+/populate_data									                        POST (Upload all unique ships from full_data to merchant_vessel)
